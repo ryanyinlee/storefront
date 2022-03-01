@@ -14,7 +14,7 @@ const messageReducer = (state = initialState, action) => {
     let {type, payload } = action;
 
     switch(type) {
-        case "ADD_MESSGE":
+        case "ADD_MESSAGE":
             return {...state, messages: [...state.messages, payload]}
         case "ADD_FRIEND":
             return {...state, friends:  [...state.friends, payload] }

@@ -2,10 +2,12 @@
 
 import { createStore, combineReducers } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import messageReducer from './messages';
+import categoryReducer from './categories';
+import productReducer from './products';
 
 const reducers = combineReducers({
-    chat: messageReducer,
+    category: categoryReducer,
+    product: productReducer
 });
 
 // pass in reducers to our createStore
